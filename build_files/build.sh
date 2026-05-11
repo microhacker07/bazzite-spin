@@ -23,7 +23,8 @@ gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 repo_gpgcheck=1
 EOF
 
-dnf5 install netbird-ui
+dnf5 config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo --overwrite
+dnf5 install -y netbird-ui
 
 # Use a COPR Example:
 #
