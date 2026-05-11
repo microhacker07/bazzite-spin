@@ -12,20 +12,6 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux kitty libvirt 
 
-# Netbird VPN install
-tee /etc/yum.repos.d/netbird.repo <<EOF
-[netbird]
-name=netbird
-baseurl=https://pkgs.netbird.io/yum/
-enabled=1
-gpgcheck=1
-gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
-repo_gpgcheck=1
-EOF
-
-dnf5 config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo --overwrite
-dnf5 install -y netbird-ui
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
