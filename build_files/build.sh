@@ -16,7 +16,9 @@ declare -A RPM_PACKAGES=(
   ["fedora"]="\
     kitty \
     libvirt \
-    qemu-kvm" 
+    podman-compose \
+    qemu-kvm \
+    " 
 
   ["netbird"]="\
     netbird-ui \
