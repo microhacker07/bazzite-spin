@@ -18,6 +18,7 @@ declare -A RPM_PACKAGES=(
     libvirt \
     podman-compose \
     qemu-kvm \
+    virt-manager \
     " 
 
   ["netbird"]="\
