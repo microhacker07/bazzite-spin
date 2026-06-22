@@ -16,7 +16,6 @@ declare -A RPM_PACKAGES=(
   ["fedora"]="\
     kitty \
     libvirt \
-    podman-compose \
     qemu-kvm \
     virt-manager \
     virt-viewer \
