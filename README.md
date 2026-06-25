@@ -5,7 +5,7 @@ A custom spin of bazzite, current only bazzite-open-nvidia.
 Switch from an existing Fedora Atomic or Universal Blue install to Bazzite-spin.
 
 ```bash
-sudo bootc switch --enforce-container-sigpolicy ghcr.io/microhacker07/bazzite-spin:latest
+sudo bootc switch --enforce-container-sigpolicy ghcr.io/nebock/bazzite-spin:latest
 ```
 
 Additional packages compared to Bazzite:
